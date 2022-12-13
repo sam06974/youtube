@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap">
+        <link rel="stylesheet" href="/public/vendor/prism.css">
+        <link rel="stylesheet" href="/public/styles.css">
+         <title>sam web</title>
+        <meta description="samweb" content="sam web">
+        <script src="https://js.stripe.com/v3"></script>
+        <style>
+            .hamburger-menu  {
+                width:24px;
+                height: 24px;
+            }
+            .youtube-logo {
+                width: 90px;
+                 }
+
+                 .search-bar {
+                    width: 300px;
+                    margin-left: 50px;
+                    
+                 }
+                
+
+             .search  {
+                width: 15px;
+             }
+             .voice-search{
+                width: 15px;
+
+              }
+              .voice-search-tooltip-container {
+                width: 50px;
+              }
+              .search-bar{  
+                border-radius:5px ;
+                
+
+              }
+              .right-section{
+                margin-left: 200px;
+              }
+              .create ,.youtube-apps, .notifications , .profile-pic {
+                width: 20px;
+                margin-left: 250px;
+              }
+              .picweb {
+                width: 40px;
+              }
+              .side-bar-coloumn {
+                width: 20px;
+                
+              }
+              .side-bar-home , .side-bar-explore , .side-bar-subscribe , .side-bar-originals , .side-bar-music , .side-bar-create {
+                margin-top: 30px;
+              }
+           
+
+
+              .container-1img , .container-2img , .container-3img , .container-4img , .container-5img ,.container-6img ,.container-7img ,.container-8img {
+                width: 300px;
+              }
+              .video-container1 , .video-container2 , .video-container3 , .video-container4 , .video-container5 ,.video-counter6 , .video-counter7 , .video-counter8{
+                display: grid;
+                grid-template-rows:180px 150px ;
+                vertical-align: top;
+              }
+              .profile-img , .profile-2img , .profile-3img , .profile-4img ,  .profile-5img , .profile-6img ,.profile-7img ,.profile-8img {
+                width: 80%;
+              }
+           
+              
+         
+        </style>
+    </head>
+    <body data-browser="chrome">
+        <script>window.initialStore=void 0</script>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root">
+            <div class="sam-youtube">
+                <header class="header" style="display:flex ;flex-direction:row ;">
+                 <div class="left-section"   style="display: grid;grid-template-columns: 50px 100px ; ">
+                    <img class="hamburger-menu" src="pics/hamburger-menu-5.png">
+                    <img class="youtube-logo" src="pics/youtube-logo.svg">
+                </div>
+                <div class="middle-section" style="display:grid ;grid-template-columns: 400px 50px 20px;">
+                    <div class="input"> <input class="search-bar" type="text" placeholder="search"></div>
+                    <div class="search">  <button class="search-button-tooltip-container" style="background-color:white;border:none ;"><img class="search" src="pics/search.svg">search</div></button>
+                    <div class="voice"><button class="voice-search-tooltip-container" style="background-color:white ;border:none ;"><img class="voice-search" src="pics/voice-search-icon.svg">voice </div></button>
+                </div>
+                <div class="right-section" style="display:grid ;grid-template-columns: 100px 100px 100px 100px ;">
+                    <div class="create"><img src="pics/creat.svg">create</div>
+                    <div class="youtube-apps"><img src="pics/youtube-apps.svg">youtube apps</div>
+                    <div class="notifications"><img src="pics/notifications.svg">notifications</div>
+                    <div class="profile-pic"><img  class="picweb"  src="pics/1-1 prof.jpg">samweb</div>
+
+                </div>
+
+                </header>
+                <div class="main" style="display:grid;grid-template-columns:50px 1fr ;column-gap:20px ;">
+                <nav class="side-bar" style="display:inline-block ;">
+                    <div class="side-bar-coloumn" style="display:grid ;grid-template-rows: 100px 100px 100px 100px 150px 100px  ;">
+                        <div class="side-bar-home"><img src="pics/home.svg">home</div>
+                        <div class="side-bar-explore"><img src="pics/explore.svg">explore</div>
+                        <div class="side-bar-subscribe"><img src="pics/subscriptions.svg">subscribe</div>
+                        <div class="side-bar-originals"><img src="pics/originals.svg">originals</div>
+                        <div class="side-bar-music"><img src="pics/youtube-music.svg">youtube music</div>
+                        <div class="'side-bar-create"><img src="pics/creat.svg">create</div>
+
+
+                    </div>
+                </nav>
+                <main>
+                    <section class="video-grid-coloumn" style="display:grid ;grid-template-columns: 1fr 1fr 1fr 1fr;">
+                        <div class="video-container1">
+                            <div class="tumbline1"><img class="container-1img" src="pics/new1.jpg"></div>
+                       
+                        <div class="video-counter" style="display:grid ;grid-template-columns: 50px 250px;">
+                            <div class="video-profile" ><img class="profile-img" src="pics/new-pr1.jpg"></div>
+                            <div class="video-counter-info">
+                                <p style="font-size:20px ;font-weight: bold;font-style: normal;color: black;margin-top:1px ;margin-bottom:1px ;">Don - Jalabulajangu Video | Sivakarthikeyan | Anirudh Ravichander</p>
+                                <p style="font-size:15px ;font-style: normal;color: rgba(84, 87, 87, 0.459);margin-top:5px ;margin-bottom:4px ;">SonyMusicSouthVEVO</p>
+                                <p style="font-size:15px ;font-style: normal;color: rgba(50, 51, 51, 0.459);margin-top:5px ;">47,979,342 views  Jun 18, 2022</p>
+
+                            </div>
+                        </div>
+
+                        
+                        </div>
+                        <div class="video-container2">
+                            <div class="tumbline2"><img class="container-2img" src="pics/1-2 new.webp"></div>
+                       
+                        <div class="video-counter2" style="display:grid ;grid-template-columns: 50px 250px;">
+                            <div class="video-profile2" ><img class="profile-2img" src="pics/1-2prnew.jpg"></div>
+                            <div class="video2-counter-info">
+                                <p style="font-size:20px ;font-weight: bold;font-style: normal;color: black;margin-top:1px ;margin-bottom:1px ;">The Monster - Rocky |The Monster Song | Everybody Is Gangster Till You See The Monster</p>
+                                <p style="font-size:15px ;font-style: normal;color: rgba(84, 87, 87, 0.459);margin-top:5px ;margin-bottom:4px ;">KVILL∆N</p>
+                                <p style="font-size:15px ;font-style: normal;color: rgba(50, 51, 51, 0.459);margin-top:5px ;">206,040 views  Premiered Jul 3, 2022</p>
+
+                            </div>
+                        </div>
+
+                        
+                        </div>
+                        <div class="video-container3">
+                            <div class="tumbline3"><img class="container-3img" src="pics/1-3new.webp"></div>
+                       
+                        <div class="video-counter" style="display:grid ;grid-template-columns: 50px 250px;">
+                            <div class="video-profile3" ><img class="profile-3img" src="pics/new-pr1.jpg"></div>
+                            <div class="video3-counter-info">
+                                <p style="font-size:20px ;font-weight: bold;font-style: normal;color: black;margin-top:1px ;margin-bottom:1px ;">OK Bangaram - Raara Aatagaada Lyric Video | A.R. Rahman, Mani Ratnam</p>
+                                <p style="font-size:15px ;font-style: normal;color: rgba(84, 87, 87, 0.459);margin-top:5px ;margin-bottom:4px ;">SonyMusicSouthVEVO</p>
+                                <p style="font-size:15px ;font-style: normal;color: rgba(50, 51, 51, 0.459);margin-top:5px ;">2,011,638 views  Apr 4, 2015</p>
+
+                            </div>
+                        </div>
+
+                        
+                        </div><div class="video-container4">
+                            <div class="tumbline4"><img class="container-4img" src="pics/1-4new.webp"></div>
+                       
+                        <div class="video-counter4" style="display:grid ;grid-template-columns: 50px 250px;">
+                            <div class="video-profile4" ><img class="profile-4img" src="pics/1-2prnew.jpg"></div>
+                            <div class="video4-counter-info">
+                                <p style="font-size:20px ;font-weight: bold;font-style: normal;color: black;margin-top:1px ;margin-bottom:1px ;">Eyy Bidda Idhi Naa Adda Full Video Song |Pushpa Songs Telugu |Allu Arjun, Rashmika |DSP |Nakash Aziz</p>
+                                <p style="font-size:15px ;font-style: normal;color: rgba(84, 87, 87, 0.459);margin-top:5px ;margin-bottom:4px ;">
+                                    Aditya Music
+                                    </p>
+                                <p style="font-size:15px ;font-style: normal;color: rgba(50, 51, 51, 0.459);margin-top:5px ;">79,237,006 views  Jan 11, 2022</p>
+
+                            </div>
+                        </div>
+
+                        
+                       
+                    </div><div class="video-container5">
+                        <div class="tumbline5"><img class="container-5img" src="pics/2-1new.webp"></div>
+                   
+                    <div class="video-counter5" style="display:grid ;grid-template-columns: 50px 250px;">
+                        <div class="video-profile5" ><img class="profile-5img" src="pics/2-1newpro.jpg"></div>
+                        <div class="video5-counter-info">
+                            <p style="font-size:20px ;font-weight: bold;font-style: normal;color: black;margin-top:1px ;margin-bottom:1px ;">Arerey Manasa (From "Falaknuma Das")</p>
+                            <p style="font-size:15px ;font-style: normal;color: rgba(84, 87, 87, 0.459);margin-top:5px ;margin-bottom:4px ;">Sid Sriram
+                            </p>
+                            <p style="font-size:15px ;font-style: normal;color: rgba(50, 51, 51, 0.459);margin-top:5px ;">4,609,410 views  May 3, 2019</p>
+
+                        </div>
+                    </div>
+
+                </div><div class="video-container6">
+                    <div class="tumbline6"><img class="container-6img" src="pics/2-6 new.webp"></div>
+               
+                <div class="video-counter6" style="display:grid ;grid-template-columns: 50px 250px;">
+                    <div class="video-profile6" ><img class="profile-6img" src="pics/2-3 pro.jpg"></div>
+                    <div class="video6-counter-info">
+                        <p style="font-size:20px ;font-weight: bold;font-style: normal;color: black;margin-top:1px ;margin-bottom:1px ;">Tank vs Range Rover Challenge Part 2 - Top Gear - BBC</p>
+                        <p style="font-size:15px ;font-style: normal;color: rgba(84, 87, 87, 0.459);margin-top:5px ;margin-bottom:4px ;">Top Gear</p>
+                        <p style="font-size:15px ;font-style: normal;color: rgba(50, 51, 51, 0.459);margin-top:5px ;">7,272,836 views  Jun 6, 2009</p>
+
+                    </div>
+                </div>
+
+            </div><div class="video-container7">
+                <div class="tumbline7"><img class="container-7img" src="pics/2-4 new.webp"></div>
+           
+            <div class="video-counter7" style="display:grid ;grid-template-columns: 50px 250px;">
+                <div class="video-profile7" ><img class="profile-7img" src="pics/1-2prnew.jpg"></div>
+                <div class="video7-counter-info">
+                    <p style="font-size:20px ;font-weight: bold;font-style: normal;color: black;margin-top:1px ;margin-bottom:1px ;">BheemlaNayak Title Song | #Pawan Kalyan | Rana Daggubati | Saagar K Chandra | Trivikram | Thaman S</p>
+                    <p style="font-size:15px ;font-style: normal;color: rgba(84, 87, 87, 0.459);margin-top:5px ;margin-bottom:4px ;">Aditya Music </p>
+                    <p style="font-size:15px ;font-style: normal;color: rgba(50, 51, 51, 0.459);margin-top:5px ;">103,981,502 views  Sep 2, 2021</p>
+
+                </div>
+            </div>
+
+        </div><div class="video-container8">
+            <div class="tumbline8"><img class="container-8img" src="pics/2-5 new.webp"></div>
+       
+        <div class="video-counter8" style="display:grid ;grid-template-columns: 50px 250px;">
+            <div class="video-profile8" ><img class="profile-8img" src="pics/2-5pro.jpg"></div>
+            <div class="video8-counter-info">
+                <p style="font-size:20px ;font-weight: bold;font-style: normal;color: black;margin-top:1px ;margin-bottom:1px ;">Rolex Entry BGM In 8D Audio</p>
+                <p style="font-size:15px ;font-style: normal;color: rgba(84, 87, 87, 0.459);margin-top:5px ;margin-bottom:4px ;">8D  Songs lover</p>
+                <p style="font-size:15px ;font-style: normal;color: rgba(50, 51, 51, 0.459);margin-top:5px ;">319,810 views  Oct 11, 2022</p>
+
+            </div>
+        </div>
+
+                        
+                        </div>
+                    </div>
+
+
+                    </section>
+                </main>
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
